@@ -1,0 +1,98 @@
+
+# Cisco Packet Tracer – LAN Configuration
+
+## 📌 Project Overview
+
+This project demonstrates the configuration and testing of a Local Area Network (LAN) using Cisco Packet Tracer.
+
+Three PCs are configured with static IPv4 addresses in the same network. Connectivity between the devices is verified using the `ping` command.
+
+## 🛠️ Tools Used
+
+- Cisco Packet Tracer
+- PC End Devices
+- Ethernet Connections
+- IPv4 Addressing
+- Command Prompt (Ping)
+
+## 🌐 Network Configuration
+
+The LAN uses the following IP addressing scheme:
+
+| Device | IP Address | Subnet Mask |
+|--------|------------|-------------|
+| PC0 | 192.168.1.10 | 255.255.255.0 |
+| PC1 | 192.168.1.11 | 255.255.255.0 |
+| PC2 | 192.168.1.12 | 255.255.255.0 |
+
+**Network Address:** 192.168.1.0/24
+
+**Default Gateway:** Not configured (not required for communication within this LAN).
+
+## ⚙️ Configuration Steps
+
+1. Open Cisco Packet Tracer.
+2. Add three PC devices to the workspace.
+3. Connect the PCs to the LAN.
+4. Open each PC and navigate to:
+   - Desktop
+   - IP Configuration
+5. Select Static IP Configuration.
+6. Assign the following IP addresses:
+   - PC0: 192.168.1.10
+   - PC1: 192.168.1.11
+   - PC2: 192.168.1.12
+7. Configure the subnet mask as `255.255.255.0` on all PCs.
+8. Save the network configuration.
+
+## 🧪 Connectivity Testing
+
+Connectivity was tested using the `ping` command from the Command Prompt of each PC.
+
+### PC0 Testing
+
+```bash
+ping 192.168.1.10
+ping 192.168.1.12
+```
+
+### PC1 Testing
+
+```bash
+ping 192.168.1.10
+ping 192.168.1.12
+```
+
+### PC2 Testing
+
+```bash
+ping 192.168.1.10
+ping 192.168.1.11
+```
+
+## ✅ Results
+
+All ping tests were successful.
+
+| Source PC | Destination IP | Packets Sent | Received | Lost |
+|-----------|----------------|--------------|----------|------|
+| PC0 | 192.168.1.10 | 4 | 4 | 0 |
+| PC0 | 192.168.1.12 | 4 | 4 | 0 |
+| PC1 | 192.168.1.10 | 4 | 4 | 0 |
+| PC1 | 192.168.1.12 | 4 | 4 | 0 |
+| PC2 | 192.168.1.10 | 4 | 4 | 0 |
+| PC2 | 192.168.1.11 | 4 | 4 | 0 |
+
+**Packet Loss: 0%**
+
+## 🎯 Conclusion
+
+Successfully configured a LAN using Cisco Packet Tracer with three PCs and static IPv4 addressing.
+
+The ping tests confirmed successful communication between the devices with zero packet loss.
+
+This project demonstrates basic LAN configuration, IPv4 addressing, subnet masks, and network connectivity verification.
+
+## 👨‍💻 Author
+
+Created as a practical networking project using Cisco Packet Tracer.
